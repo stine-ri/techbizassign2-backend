@@ -1,0 +1,32 @@
+###
+POST http://localhost:8000/api/courseRegistrations
+Content-Type: application/json
+
+{
+
+        "fname": "Christine",
+        "lname": "Monyancha",
+        "email":"stine@gmail.com",
+        "phone": "0705912632",
+        "educationLevel":"bachelor degree",
+        "modeOfLearning": "online",
+        "paymentOption": "mpesa",
+        "mpesaNumber": "0705912632",
+        "enrollDay": "15",
+        "enrollMonth": "3",
+        "enrollYear": "2025",
+        "courseSelected": "AI"
+
+}
+###
+PUT http://localhost:8000/api/courseRegistrations/1
+Content-Type: application/json
+
+{
+
+     "booking_status":"cancelled"
+}
+###
+
+DELETE http://localhost:8000/api/courseRegistrations/1
+###
